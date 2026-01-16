@@ -11,8 +11,14 @@ export const scenes: Record<SceneId, SceneDefinition> = {
   dorm: {
     id: "dorm",
     label: "Dorm",
-    next: "city",
+    next: "company",
     actions: ["sleep", "cook", "go_out"],
+  },
+  company: {
+    id: "company",
+    label: "Company",
+    next: "city",
+    actions: ["go_out", "shop"],
   },
   city: {
     id: "city",
@@ -23,8 +29,14 @@ export const scenes: Record<SceneId, SceneDefinition> = {
   cafe: {
     id: "cafe",
     label: "Cafe",
-    next: "dorm",
+    next: "bar",
     actions: ["cook", "go_out"],
+  },
+  bar: {
+    id: "bar",
+    label: "Bar",
+    next: "dorm",
+    actions: ["go_out", "sleep"],
   },
 };
 

@@ -1,4 +1,4 @@
-export type SceneId = "dorm" | "city" | "cafe";
+export type SceneId = "dorm" | "company" | "city" | "cafe" | "bar";
 
 export type ActionIntent = "sleep" | "go_out" | "cook" | "shop";
 
